@@ -1,12 +1,12 @@
-function countWord(sentence){
+function countWord(text){
     let readingWord = false;
     let numberOfWord = 0;
-    for (let i=0; i<sentence.length; i++){
-        if (sentence[i] != ' ' && readingWord != true){
+    for (let i=0; i<text.length; i++){
+        if (text[i] != ' ' && readingWord != true){
             numberOfWord += 1;
             readingWord = true;
         }
-        else if (sentence[i] == ' '){
+        else if (text[i] == ' '){
             readingWord = false;
         }
     }
